@@ -1,9 +1,15 @@
+import java.util.Scanner;
+
 public class Main { 
-    public static void main (String[] args)
-        float f1 = 1.123456789f; //1.1234568
+    public static void main(String[] args) {
+        float f1 = 1.123456789f;
         System.out.println(f1);
 
-        var scanner = new java.util.Scanner(System.in)
+        Scanner scanner = new Scanner(System.in);
         System.out.print("Bitte Zahl Eingeben: ");
         float f2 = scanner.nextFloat();
         System.out.println("Die kleine Zahl: " + f2);
+        
+        scanner.close();
+    }
+}
